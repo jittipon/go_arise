@@ -1,4 +1,4 @@
-package idvalidator
+package thaiid
 
 import (
 	"errors"

@@ -2,14 +2,14 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"go_arise/idvalidator"
+	"go_arise/thaiid"
 	"net/http"
 )
 
 func main() {
 	r := gin.Default()
 	r.POST("/ping", pingHandler)
-	r.POST("/thai/ids/verify", idvalidator.ValidateHandler)
+	r.POST("/thai/ids/verify", thaiid.ValidateHandler)
 
 	err := r.Run()
 	if err != nil {
